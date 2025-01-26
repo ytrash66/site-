@@ -1,36 +1,6 @@
 body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
-    color: #333;
-    margin: 0;
-    padding: 0;
-}
-
-header {
-    background-color: #333;
-    color: white;
-    padding: 1rem;
-    text-align: center;
-}
-
-nav ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-nav ul li {
-    display: inline;
-    margin: 0 15px;
-}
-
-nav ul li a {
-    color: white;
-    text-decoration: none;
-}
-/* Estilos Básicos */
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
     margin: 0;
     padding: 0;
 }
@@ -65,7 +35,6 @@ h1 {
     margin-top: 20px;
 }
 
-/* Lista de Animes */
 #anime-list {
     display: flex;
     justify-content: space-around;
@@ -94,7 +63,6 @@ h1 {
     opacity: 0.8;
 }
 
-/* Layout Responsivo */
 @media (max-width: 768px) {
     #anime-list {
         flex-direction: column;
@@ -108,7 +76,6 @@ h1 {
     }
 }
 
-/* Estilo da Barra de Navegação */
 header {
     background-color: #222;
     padding: 10px 0;
@@ -137,5 +104,3 @@ nav ul li a:hover {
     background-color: #444;
     border-radius: 5px;
 }
-
-
