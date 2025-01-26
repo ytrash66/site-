@@ -11,15 +11,44 @@
         <nav>
             <ul>
                 <li><a href="#">Página Inicial</a></li>
-                <li><a href="#">Meu Perfil</a></li>
                 <li><a href="#">Animes</a></li>
+                <li><a href="#">Sobre</a></li>
             </ul>
         </nav>
     </header>
+
     <main>
-        <h1>Bem-vindo ao Anime Catalog</h1>
-        <p>Catalogar seus animes favoritos!</p>
+        <h1>Bem-vindo ao Anime Catalog!</h1>
+        <section id="anime-list">
+            <!-- A lista de animes será inserida aqui -->
+        </section>
     </main>
+
+    <footer>
+        <p>&copy; 2025 Anime Catalog</p>
+    </footer>
+
+    <!-- Aqui está o seu script JavaScript -->
+    <script>
+        const animeList = [
+            { title: 'Attack on Titan', image: 'url_da_imagem' },
+            { title: 'Naruto', image: 'url_da_imagem' },
+            { title: 'One Piece', image: 'url_da_imagem' }
+        ];
+
+        const animeContainer = document.getElementById('anime-list');
+
+        animeList.forEach(anime => {
+            const animeItem = document.createElement('div');
+            animeItem.classList.add('anime-item');
+            animeItem.innerHTML = `
+                <img src="${anime.image}" alt="${anime.title}">
+                <h3>${anime.title}</h3>
+            `;
+            animeContainer.appendChild(animeItem);
+        });
+    </script>
 </body>
 </html>
+
 
