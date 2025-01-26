@@ -27,4 +27,115 @@ nav ul li a {
     color: white;
     text-decoration: none;
 }
+/* Estilos Básicos */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin-right: 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    margin-top: 20px;
+}
+
+/* Lista de Animes */
+#anime-list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.anime-item {
+    margin: 15px;
+    text-align: center;
+    width: 150px;
+}
+
+.anime-item img {
+    width: 100%;
+    border-radius: 8px;
+    transition: opacity 0.3s ease;
+}
+
+.anime-item:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease-in-out;
+}
+
+.anime-item:hover img {
+    opacity: 0.8;
+}
+
+/* Layout Responsivo */
+@media (max-width: 768px) {
+    #anime-list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .anime-item {
+        width: 100%;
+        max-width: 300px;
+        margin: 10px 0;
+    }
+}
+
+/* Estilo da Barra de Navegação */
+header {
+    background-color: #222;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px;
+}
+
+nav ul li a:hover {
+    background-color: #444;
+    border-radius: 5px;
+}
+
 
