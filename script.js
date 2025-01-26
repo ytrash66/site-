@@ -8,7 +8,6 @@ const animeContainer = document.getElementById('anime-list');
 const searchInput = document.getElementById('searchInput');
 
 function updateAnimeList(animes) {
-    animeContainer.innerHTML = ''; // Limpar o conteúdo anterior
     animes.forEach(anime => {
         const animeItem = document.createElement('div');
         animeItem.classList.add('anime-item');
